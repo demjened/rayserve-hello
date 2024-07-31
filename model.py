@@ -8,7 +8,7 @@ app = FastAPI()
 
 @serve.deployment(num_replicas=1)
 @serve.ingress(app)
-class MyModel:
+class HelloModel:
     def __init__(self):
         # Load your model here
         pass
@@ -18,4 +18,4 @@ class MyModel:
         # Perform inference here
         return {"result": "Hello world"}
 
-hello = MyModel.bind()
+hello = HelloModel.bind()
