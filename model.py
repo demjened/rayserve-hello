@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-import ray
+#import ray
 from ray import serve
 
-ray.init(address="auto")  # Connect to the Ray cluster
+#ray.init(address="auto")  # Connect to the Ray cluster
 
 app = FastAPI()
 
