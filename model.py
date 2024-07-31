@@ -14,7 +14,7 @@ class HelloModel:
         pass
 
     @app.get("/classify")
-    def classify(self, request):
+    def classify(self):
         # Perform inference here
         return {"result": "Hello world"}
 
